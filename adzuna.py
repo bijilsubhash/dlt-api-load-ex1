@@ -34,5 +34,5 @@ if __name__ == "__main__":
         dataset_name="jobs"
     )
 
-    load_info = pipeline.run(get_jobs(os.environ.get('APP_ID'), os.environ.get('APP_KEY')))
+    load_info = pipeline.run(get_jobs(os.environ['APP_ID'], os.environ['APP_KEY']))
     print(load_info)
