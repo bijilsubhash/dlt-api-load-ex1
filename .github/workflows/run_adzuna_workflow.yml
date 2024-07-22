@@ -43,7 +43,7 @@ jobs:
       - run: pip install -r requirements_github_action.txt
         if: steps.cache-virtualenv.outputs.cache-hit != 'true'
       - name: Run pipeline script
+        run: python 'adzuna.py'
         env:
           APP_ID: ${{ secrets.APP_ID }}
           APP_KEY: ${{ secrets.APP_KEY }}
-        run: python 'adzuna.py'
