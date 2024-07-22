@@ -1,0 +1,15 @@
+cron-descriptor==1.4.3
+dbt==1.0.0.38.5
+dlt==0.5.1
+gcsfs==2024.6.1
+google-cloud-bigquery==3.25.0
+google-cloud-bigquery-storage==2.25.0
+importlib-metadata==8.0.0
+importlib-resources==6.4.0
+jaraco.text==3.12.1
+ordered-set==4.1.0
+pipdeptree==2.9.6
+platformdirs==4.2.2
+pyarrow==17.0.0
+python-dotenv==1.0.1
+tomli==2.0.1
