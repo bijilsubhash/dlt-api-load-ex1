@@ -45,5 +45,5 @@ jobs:
       - name: Run pipeline script
         env:
           APP_ID: ${{ secrets.APP_ID }}
-          APP_KEY: ${{ secret.APP_KEY }}
+          APP_KEY: ${{ secrets.APP_KEY }}
         run: python 'adzuna.py'
