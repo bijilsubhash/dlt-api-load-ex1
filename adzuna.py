@@ -1,5 +1,4 @@
 import dlt
-from dotenv import load_dotenv
 import os
 import requests
 
@@ -29,12 +28,11 @@ def get_jobs(APP_ID, APP_KEY):
         break
 
 if __name__ == "__main__":
-    load_dotenv()
     pipeline = dlt.pipeline(
         pipeline_name="adzuna",
         destination="bigquery",
         dataset_name="jobs"
     )
 
-    load_info = pipeline.run(get_jobs(os.getenv('APP_ID'), os.getenv('APP_KEY')))
+    load_info = pipeline.run(get_jobs(os.environ.get('APP_ID'), os.environ.get('APP_KEY')))
     print(load_info)
