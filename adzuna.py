@@ -35,8 +35,5 @@ if __name__ == "__main__":
     )
     APP_ID = os.environ['APP_ID']
     APP_KEY = os.environ['APP_KEY']
-    print("APP_ID:", APP_ID)
-    print("APP_KEY:", APP_KEY)
-    print("Starting pipeline")
     load_info = pipeline.run(get_jobs(APP_ID, APP_KEY))
     print(load_info)
