@@ -1,5 +1,5 @@
 name: Run adzuna pipeline from adzuna.py
-"on":
+on:
   schedule:
     - cron: 0 6 * * *
   workflow_dispatch: null
